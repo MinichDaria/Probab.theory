@@ -10,14 +10,14 @@ from math import factorial
 def combinations(n, k):
     return int(factorial(n) / (factorial(k) * factorial(n-k)))
 c100 = combinations(100,85)
-c100
+print(c100)
 
 
 # In[3]:
 
 
 pk = 0.8 ** 85
-pk
+print(pk)
 
 
 # In[4]:
@@ -25,14 +25,14 @@ pk
 
 q = 1 - 0.8
 qnk = q ** (100 - 85)
-qnk
+print(qnk)
 
 
 # In[5]:
 
 
 p = c100 * pk * qnk
-p
+print(p)
 
 
 # Задание 2
@@ -41,7 +41,7 @@ p
 
 
 l = 5000 * 0.0004
-l
+print(l)
 
 
 # In[12]:
@@ -49,7 +49,7 @@ l
 
 from math import factorial, exp
 p = (l ** 0) * exp(-l) / factorial(0)
-p
+print(p)
 
 
 # In[13]:
@@ -57,7 +57,7 @@ p
 
 from math import factorial, exp
 p = (l ** 2) * exp(-l) / factorial(2)
-p
+print(p)
 
 
 # Задание 3
@@ -69,14 +69,14 @@ from math import factorial
 def combinations(n, k):
     return int(factorial(n) / (factorial(k) * factorial(n-k)))
 c144 = combinations(144,70)
-c144
+print(c144)
 
 
 # In[15]:
 
 
 pk = 0.5 ** 70
-pk
+print(pk)
 
 
 # In[16]:
@@ -84,14 +84,14 @@ pk
 
 q = 1 - 0.5
 qnk = q ** (144 - 70)
-qnk
+print(qnk)
 
 
 # In[17]:
 
 
 p = c144 * pk * qnk
-p
+print(p)
 
 
 # Задание 4
@@ -102,7 +102,7 @@ p
 
 
 p = combinations(7,2) / combinations(10,2) * combinations(9,2) / combinations(11,2)
-p
+print(p)
 
 
 # Два мяча белые
@@ -122,7 +122,7 @@ print(p1+p2+p3)
 
 
 p = 1 - (combinations(3,2) / combinations(10,2) * combinations(2,2) / combinations(11, 2))
-p
+print(p)
 
 
 # In[ ]:
